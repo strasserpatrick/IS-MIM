@@ -17,7 +17,7 @@ import argparse
 import os
 
 from batchgenerators.utilities.file_and_folder_operations import *
-from nnunet.run.default_configuration import get_my_configuration
+from nnunet.run.default_configuration import get_default_configuration
 from nnunet.paths import default_plans_identifier
 from nnunet.run.load_pretrained_weights import load_pretrained_weights
 
