@@ -14,8 +14,9 @@ from nnunet.network_architecture.initialization import InitWeights_He
 from nnunet.network_architecture.neural_network import SegmentationNetwork
 
 from nnunet.training.dataloading.dataset_loading import unpack_dataset
-from nnunet.utilities.nd_softmax import softmax_helper, identity
+from nnunet.utilities.nd_softmax import softmax_helper
 
+identity = lambda x: x 
 
 class finetune(nnUNetTrainerV2):
     def __init__(self, plans_file, fold, freeze_type=None, output_folder=None, dataset_directory=None,
