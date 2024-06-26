@@ -100,7 +100,7 @@ class MimTrainer(NetworkTrainer):
         in your init accordingly. Otherwise checkpoints won't load properly!
         """
         super(MimTrainer, self).__init__(deterministic, fp16)
-        self.max_num_epochs = 100
+        self.max_num_epochs = 800
 
         self.mask_type = self.mask_ratio = self.mask_size = self.loss_type = None
 
